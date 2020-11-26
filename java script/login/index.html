@@ -1,0 +1,47 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="stylelogin.css">
+</head>
+
+<body>
+	<form class="box" method="REQUEST" id="login" onsubmit="return login()">
+		<div class="login">
+			<h2> Form login </h2>
+			<div class="input-group">
+				<input id="username" type="text" required="">
+				<span>username</span>
+			</div>
+			<div class="input-group">
+				<input id="password" type="password" required="">
+				<span>password</span>
+			</div>
+			<div class="input-group">
+				<input id="submit" type="submit" value="login">
+			</div>
+		</div>
+	</form>
+
+	<script>
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if (username == "lulu" && password == "123") {
+				alert("selamat anda berhasil login!!!");
+				window.location = "halaman.html";
+				return false;
+			}
+			else {
+				alert('Anda harus mengisi data dengan benar!');
+				return false;
+			}
+		}
+	</script>
+
+</body>
+
+</html>

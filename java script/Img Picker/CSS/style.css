@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #db9bbb;
+}
+
+#image {
+	border-radius: 0px;
+	height: 350px;
+	width: 450px;
+	margin: 50px -15px;
+}
+
+#kerangka-title {
+	font-family: sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+#input {
+	background: #fbfbfb;
+	border-radius: 500px;
+	height: 150px;
+	margin: 80px auto auto auto;
+	width: 329px;
+}
+
+#box {
+	padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.dropdown{
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 200px;
+	height: 20px;
+		
+}
+
+

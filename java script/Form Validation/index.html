@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Form Validasi</title>
+	<script src="validation.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="kerangka">
+		<div id="title">
+			<h2>TICKET</h2>
+		</div>
+
+		<br>
+		<center>
+			<form method="request" name="form">
+				<input type="text" class="form_login" id="name" name="name" onKeyPress="return maxlength(event)"
+					placeholder="Nama" required="" /><br>
+				<input type="email" class="form_login" id="email" name="email" placeholder="Email" required /><br>
+				<input type="time" class="form_login" id="pukul" name="pukul" required /><br>
+				<center>
+					<select name="tujuan" class="form_loginn" id="tujuan" required>
+						<option value="" disabled selected>Select Country</option>
+						<option value="AUSTRALIA"> AUSTRALIA </option>
+						<option value="JAPAN"> JAPAN </option>
+						<option value="KOREA"> KOREA </option>
+						<option value="MALAYSIA"> MALAYSIA </option>
+						<option value="SINGAPORE"> SINGAPORE </option <option>value="TURKEY"> TURKEY </option>
+					</select>
+
+				</center>
+				<br>
+				<input type="text" class="form_login" id="jmltiket" name="jmltiket" placeholder="Jumlah Tiket "
+					onKeyUp="angka(this)" maxlength="2" required />
+				<br>
+
+				<input type="submit" class="login_botton" onClick="return validasi()" value="Kirim">
+			</form>
+		</center>
+	</div>
+</body>
+
+</html>
